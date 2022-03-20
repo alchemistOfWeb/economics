@@ -18,16 +18,19 @@
 
     <script type="module" src="js/tickets.js"></script>
     <script type="module" src="js/index.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
-<body>
-    <header class="p-3 bg-dark text-white">
+<body class="bg-dark">
+    <header class="p-3 bg-dark border-bottom text-white">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="#" class="nav-link px-2 text-secondary">главная</a></li>
                     <li><a href="microeconomics.html" class="nav-link px-2 text-white">мИкроэкономика</a></li>
                     <li><a href="macroeconomics.html" class="nav-link px-2 text-white">мАкроэкономика</a></li>
-                    <li><a href="#" class="nav-link px-2 text-secondary">Гитхаб</a></li>
+                    <li><a href="https://github.com/alchemistOfWeb/economics" class="nav-link px-2 text-secondary">Гитхаб</a></li>
                 </ul>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -36,9 +39,9 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <div>
-            <h1 class="text-center" id="page-title">Билеты по экономике</h1>
+    <div class="container text-white">
+        <div class="mt-2">
+            <h1 class="text-center" id="page-title">Учебные материалы по экономике</h1>
             <hr>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio officia molestias ut repellendus accusamus quia iure fugit ab dolore sequi repellat possimus voluptatem labore placeat totam quisquam, natus, tempora facilis reprehenderit nulla sunt libero veniam architecto. Eius magnam totam laborum maiores quibusdam tempora quae facere, maxime iure ratione nostrum.
@@ -46,27 +49,37 @@
             <p>Убедительная просьба поддержать донатом на карту сбера по телефону +7 962 633 62 15</p>
             <hr>
         </div>
-        <p>
-            <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              1. Некоторый билет
-            </a>
-        </p>
-        <div class="collapse pb-2" id="collapseExample">
-            <div class="card card-body">
-              Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
-            </div>
-        </div>
-
-        <p>
-            <a class="" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-              2. Некоторый билет
-            </a>
-        </p>
-        <div class="collapse pb-2" id="collapseExample2">
-            <div class="card card-body">
-              Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
-            </div>
-        </div>
+        
+        <ul class="list-group list-group-flush ticket-list " id="ticket-list-js">
+            <li class="list-group-item bg-dark">
+                <p>
+                    <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      1. Некоторый билет
+                    </a>
+                </p>
+                <div class="collapse pb-2" id="collapseExample">
+                    <div class="card card-body">
+                      <p>
+                        <b>Некоторый заполнитель</b> для компонента сворачивания. 
+                        Эта панель по умолчанию <i>скрыта</i>, но открывается, когда пользователь активирует соответствующий триггер.
+                      </p>
+                      <img src="img/cat.jpg" width="200" alt="just a cat">
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item bg-dark">
+                <p>
+                    <a class="" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                      2. Некоторый билет
+                    </a>
+                </p>
+                <div class="collapse pb-2" id="collapseExample2">
+                    <div class="card card-body">
+                      Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
