@@ -1,4 +1,7 @@
-import { tickets } from "./tickets";
+import { tickets } from "./tickets.js";
 
-
-console.log(tickets);
+$(()=>{
+    console.log(tickets);
+    let pagetitle = $('.page-title');
+    console.log(pagetitle);
+});
