@@ -1,4 +1,4 @@
-export const tickets = [
+export const macro = [
     {
         title: "Ключевые макроэкономические проблемы",
         number: "1",
@@ -26,7 +26,13 @@ export const tickets = [
     {
         title: "Цели и инструменты государственного макроэкономического регулирования",
         number: "2",
-        html: ``,
+        html: `
+        <p>
+            <b>Некоторый заполнитель</b> для компонента сворачивания. 
+            Эта панель по умолчанию <i>скрыта</i>, но открывается, когда пользователь активирует соответствующий триггер.
+        </p>
+        <img src="img/cat.jpg" width="200" alt="just a cat">
+        `,
         lecture: {
             title: "",
             href: ""
@@ -194,3 +200,5 @@ export const tickets = [
         sources: [],
     },
 ]
+
+export const micro = [];
